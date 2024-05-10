@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bckgrnd-clr: rgba(234, 233, 228, 1);
+    --grdnt-clr-1: rgba(198, 0, 45, 1);
+    --grdnt-clr-2: rgba(221, 36, 118, 1);
+    --blue-haze: rgba(212, 247, 255, 1);
+    --lght-pnk: #E7A0B9;
+    --grd-clmn: 5;
+}
+
+body {
+    background-color: var(--bckgrnd-clr);
+    /* height: 800vh; */
+}

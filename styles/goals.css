@@ -1,0 +1,117 @@
+.leerdoelen,
+.weeklynerd {
+    margin-top: 20vh;
+}
+
+h2 {
+    text-align: center;
+    color: var(--grdnt-clr-2);
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.goals {
+    --grd-clmn: 3;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(var(--grd-clmn), auto);
+    position: relative;
+    place-items: center;
+}
+
+.goals a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: .8em;
+    width: 12vw;
+    color: var(--grdnt-clr-2);
+}
+
+.goals a::before {
+    content: "";
+    position: absolute;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: blob 20s infinite alternate,
+        blurblob 20s infinite alternate;
+}
+
+.goals a:hover {
+    animation: blob-puls 10s infinite;
+    cursor: pointer;
+}
+
+.goals a:nth-of-type(1)::before {
+    background: rgb(255, 97, 210);
+    background: radial-gradient(farthest-corner at 100px 100px, rgba(255, 97, 210, 1) 0%, rgba(254, 144, 144, 1) 43%, rgba(234, 233, 228, 1) 97%, rgba(212, 247, 255, 1) 100%);
+    transform: rotate(120deg);
+}
+
+.goals a:nth-of-type(2)::before {
+    background: rgb(0, 123, 255);
+    background: radial-gradient(farthest-corner at 30px 30px, rgba(0, 123, 255, 1) 0%, rgba(0, 161, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+    transform: rotate(90deg);
+}
+
+.goals a:nth-of-type(3)::before {
+    background: rgb(111, 0, 198);
+    background: radial-gradient(farthest-corner at 130px 130px, rgba(111, 0, 198, 1) 0%, rgba(188, 0, 214, 1) 45%, rgba(234, 230, 228, 1) 100%);
+}
+
+@keyframes blob {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    30% {
+        transform: rotate(1turn);
+    }
+
+    70% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes blur-blob {
+    0% {
+        filter: blur(20px);
+    }
+
+    40% {
+        filter: blur(13px);
+    }
+
+    60% {
+        filter: blur(28px);
+    }
+
+    100% {
+        filter: blur(20px);
+    }
+}
+
+.goals a:has(div) div {
+    filter: blur(0);
+}
+
+.goals a>div {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: var(--bckgrnd-clr);
+    display: grid;
+    place-items: center;
+}

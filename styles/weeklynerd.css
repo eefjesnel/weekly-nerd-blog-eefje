@@ -1,0 +1,182 @@
+/* grid styling */
+
+#vakken {
+    flex-direction: column;
+    align-items: center;
+}
+
+.weeklynerd {
+    display: flex;
+    justify-content: center;
+}
+
+.weeklynerd h2 {
+    color: var(--grdnt-clr-2);
+    font-size: 1.2em;
+}
+
+.grid {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(var(--grd-clmn), auto);
+    row-gap: 4rem;
+    margin-top: 2rem;
+    place-items: center;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+.grid a:hover li {
+    color: var(--bckgrnd-clr);
+    filter: blur(0px);
+    transition: .4s;
+}
+
+.grid li {
+    display: grid;
+    place-items: center;
+    list-style-type: none;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    filter: blur(10px);
+    color: transparent;
+    transition: .4s;
+}
+
+.grid li p {
+    grid-area: 1/1;
+    font-size: .8em;
+
+}
+
+.grid a:nth-of-type(1) li {
+    background: rgb(255, 97, 210);
+    background: radial-gradient(farthest-corner at 100px 100px, rgba(255, 97, 210, 1) 0%, rgba(254, 144, 144, 1) 43%, rgba(234, 233, 228, 1) 97%, rgba(212, 247, 255, 1) 100%);
+}
+
+.grid a:nth-of-type(2) li {
+    background: rgb(111, 0, 198);
+    background: radial-gradient(circle, rgba(111, 0, 198, 1) 0%, rgba(188, 0, 214, 1) 45%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(3) li {
+    background: rgb(165, 114, 255);
+    background: radial-gradient(circle, rgba(165, 114, 255, 1) 0%, rgba(111, 159, 255, 1) 20%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(4) li {
+    background: rgb(194, 111, 255);
+    background: radial-gradient(farthest-corner at 20px 20px, rgba(194, 111, 255, 1) 0%, rgba(255, 114, 182, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(5) li {
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 114, 114, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(6) li {
+    background: rgb(0, 186, 23);
+    background: radial-gradient(circle, rgba(0, 186, 23, 1) 0%, rgba(0, 231, 16, 1) 40%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(7) li {
+    background: rgb(253, 81, 147);
+    background: radial-gradient(farthest-corner at 20px 20px, rgba(253, 81, 147, 1) 0%, rgba(251, 255, 111, 1) 77%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid>li {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background: transparent;
+    filter: blur(0);
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid>li h3 {
+    font-size: 1.1em;
+    color: var(--grdnt-clr-2);
+    text-transform: uppercase;
+}
+
+.grid>li hr {
+    border: .5px solid var(--grdnt-clr-2);
+    width: 9rem
+}
+
+.grid>li p {
+    font-size: .8em;
+    margin-top: .5rem;
+    color: var(--grdnt-clr-2);
+}
+
+.grid a:nth-of-type(8) li {
+    background: rgb(0, 123, 255);
+    background: radial-gradient(circle, rgba(0, 123, 255, 1) 0%, rgba(0, 161, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(9) li {
+    background: rgb(100, 0, 255);
+    background: radial-gradient(circle, rgba(100, 0, 255, 1) 0%, rgba(139, 0, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(10) li {
+    background: rgb(255, 0, 136);
+    background: radial-gradient(circle, rgba(255, 0, 136, 1) 0%, rgba(250, 0, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(11) li {
+    background: rgb(20, 214, 0);
+    background: radial-gradient(circle, rgba(20, 214, 0, 1) 0%, rgba(114, 255, 151, 1) 46%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(12) li {
+    background: rgb(0, 132, 214);
+    background: radial-gradient(circle, rgba(0, 132, 214, 1) 0%, rgba(0, 182, 198, 1) 51%, rgba(234, 230, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(13) li {
+    background: rgb(253, 132, 81);
+    background: radial-gradient(farthest-corner at 60px 60px, rgba(253, 132, 81, 1) 5%, rgba(255, 189, 111, 1) 57%, rgba(234, 233, 228, 1) 100%);
+}
+
+.grid a:nth-of-type(14) li {
+    background: rgb(114, 255, 182);
+    background: radial-gradient(circle, rgba(114, 255, 182, 1) 0%, rgba(111, 255, 230, 1) 33%, rgba(234, 230, 228, 1) 100%);
+}
+
+
+
+
+
+
+#vakken a:nth-of-type(1) li {
+    background: rgb(255, 0, 136);
+    background: radial-gradient(circle, rgba(255, 0, 136, 1) 0%, rgba(250, 0, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+#vakken a:nth-of-type(2) li {
+    background: rgb(0, 123, 255);
+    background: radial-gradient(circle, rgba(0, 123, 255, 1) 0%, rgba(0, 161, 255, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+#vakken a:nth-of-type(3) li {
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 114, 114, 1) 25%, rgba(234, 230, 228, 1) 100%);
+}
+
+#vakken a:nth-of-type(5) li {
+    background: rgb(20, 214, 0);
+    background: radial-gradient(circle, rgba(20, 214, 0, 1) 0%, rgba(114, 255, 151, 1) 46%, rgba(234, 230, 228, 1) 100%);
+}
+
+#vakken a:nth-of-type(4) li {
+    background: rgb(253, 81, 147);
+    background: radial-gradient(farthest-corner at 20px 20px, rgba(253, 81, 147, 1) 0%, rgba(251, 255, 111, 1) 77%, rgba(234, 230, 228, 1) 100%);
+}
